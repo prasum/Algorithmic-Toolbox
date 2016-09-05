@@ -10,7 +10,7 @@ def get_fibonacci_last_digit_naive(n):
         for i in xrange(2,61):
             fib.append(fib[i-1]+fib[i-2])
         if int(n)>60:
-            if int(n)-60<60:
+            if int(n)-60<=60:
                 return fib[int(n)-60]%10
             elif int(n)-60>60:
                 while int(n)-60*a>60:
